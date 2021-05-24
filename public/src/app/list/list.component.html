@@ -1,0 +1,23 @@
+<div id="container">
+    <div>
+        <h1>Favorite Authors</h1>
+        <button [routerLink]="['/new']">Create New Author</button>
+        <div id="table">
+            <table>
+                <thead>
+                    <td>Author</td>
+                    <td>Actions</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor= 'let author of authors'>
+                        <td>{{author.name}}</td>
+                        <td><button id="edit" [routerLink]="['/edit/',author._id]">Edit</button>  
+                            <button id="delete" (click)='deleteOne(author)'>Delete</button>
+                            <button id="quotes" [routerLink]="['quotes/',author._id]">View Quotes</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

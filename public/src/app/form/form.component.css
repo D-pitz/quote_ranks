@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(172, 172, 172);
+    
+}
+    
+
+#container{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(#646368,#383838);
+    margin-left: 50px;
+    width: 1080px;
+    border-color: rgb(255, 0, 0);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 15px;
+    padding-bottom: 150px;
+}
+
+button{
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+input{
+    background-color:black;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#submit{
+    background-color: green;
+}
+

@@ -1,0 +1,27 @@
+<div id="container">
+    <div>
+        <h1>Favorite Authors</h1>
+        <button [routerLink]="['/']">Home</button>
+        <button [routerLink]="['/write/',author._id]">Add Quote to {{author.name}}</button>
+        <div id="table">
+            <table>
+                <thead>
+                    <td>Quote</td>
+                    <td>Votes</td>
+                    <td>Actions</td>
+                </thead>
+                <tbody>
+                    <tr *ngFor= 'let quote of author.quotes; let i = index'>
+                        <td> {{ quote }}</td>
+                        <td>{{ author.votes[i] }}</td>
+                        <td><button id="vote_up" (click)='upVote(i)'>Vote Up</button>  
+                            <button id="vote_down" (click)='downVote(i)'>Vote Down</button>
+                            <button id="delete" (click)='removeOne(i)'>Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

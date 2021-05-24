@@ -1,0 +1,11 @@
+<div id="container">
+    <div>
+        <h1>Edit {{author.name}}</h1>
+        <button [routerLink]="['/']">Home</button>
+        <p>{{authorError}}</p>
+        <form (submit)='updateOne()'>
+            <p>Name: <input type="text" name="name" [(ngModel)]='author.name'></p>
+            <p><input id="submit" type="submit" value="Submit"></p>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div id="container">
+    <div>
+        <button [routerLink]="['/']">Home</button>
+        <h1>Create New Quote from {{author.name}}</h1>
+        {{quoteError}}
+        <form (submit)='addQuote()'>
+            <p>Quote: <input type="text" name="quote" [(ngModel)]='quote.quote'></p>
+            <p><input id="submit" type="submit" value="Submit"></p>
+        </form>
+    </div>
+</div>
+

@@ -5,5 +5,5 @@ Angular -v 8.3.29
 http://localhost:8000
 
 To run server: 
-in cmd line cd to file --> run: nodemon server.js
+in cmd line cd to file --> run: nodemon server.js <br>
 in seperate terminal cd to file --> cd public --> ng build --watch
